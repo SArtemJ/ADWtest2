@@ -28,7 +28,7 @@ type StatusLabel struct {
 
 //
 
-//глобальные переменные
+
 var (
 	//token
 	PersonalToken = ""
@@ -38,14 +38,12 @@ var (
 	tpl *template.Template
 	// status for issues
 
-	//repo issues
 	Repo = "ADWtest"
 	Owner = "SArtemJ"
 )
 
 func init() {
 
-	//параметр ключа можно задавать при запуске, если не указываем используется ключ по умолчанию
 	tk := flag.String("token", "", "")
 	flag.Parse()
 	PersonalToken = *tk
@@ -70,7 +68,6 @@ func main() {
 		Labels: []string{"bug"},
 	}
 
-	//string to url
 	k, _ := url.Parse(u)
 
 	//params for url
