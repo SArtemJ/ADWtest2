@@ -26,8 +26,7 @@ type StatusLabel struct {
 	Labels []string
 }
 
-//
-
+//Some new
 //глобальные переменные
 var (
 	//token
